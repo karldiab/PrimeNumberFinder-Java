@@ -1,0 +1,25 @@
+
+public class PrimeFinder {
+	public static final int UPPER_LIMIT = 100;
+	private int unsieved[] = new int[UPPER_LIMIT];
+	private void initUnsieved() {
+		for (int i = 3; i <= UPPER_LIMIT; i++){
+			//Only fill unsieved with odd numbers
+			if (i%2 != 0)
+				unsieved[i] = i;
+		}
+	};
+	private void sieve() {
+		for (int i = 3; i < Math.sqrt(UPPER_LIMIT); i++) {
+			
+		}
+	}
+	public static void main(String args[]) {
+		System.out.println("Finding all primes between 0 and " + UPPER_LIMIT);
+		System.out.println("");
+		System.out.println("Filling candidates array");
+		PrimeFinder finder = new PrimeFinder();
+		finder.initUnsieved();
+	}
+
+}
